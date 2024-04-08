@@ -1,0 +1,102 @@
+<div class="page-bg">
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class=" nav-height">
+        <div class="d-flex flex-row container-fluid">
+        <div style="width: 1400px;">
+       
+        <a class=" navbar-brand text-light mt-4" href="#">
+          WhichCard?
+          <!-- <img src="../../assets/images/logo1.jpeg" alt="" width="150px" height="100px" > -->
+        </a>
+    
+        <p class=" navbar-brand text-light mt-4" (click)="toBrowsCards()">
+          Browse cards
+         
+        </p>
+        <p class=" navbar-brand text-light mt-4" (click)="wallet()">
+          Wallet
+         
+        </p>
+       </div>
+      
+        <div>
+          <a href="#" class="btn  btn-lg p-4 mt-2  user-b {{account}}">
+            <span class="glyphicon glyphicon-user user-i"></span> 
+          </a>
+         
+        </div>
+        <div class="p-3 {{account}}">
+          <button type="button" class="btn btn-outline-light p-3 logout-b nav-button" (click)="logOut()">log out</button>
+        </div>
+        </div>
+     </div>
+    </nav>
+    
+    <div class="grid-container">
+      
+      <div class="grid-item">
+        <div class=" form-size form-bg border ">
+          <div class="">
+            <div class="mb-3 mt-3 p-4 form-group input-w">
+              <table id="information">
+                <tbody>
+                <tr>
+                  <th></th>
+                  <th class="p-3">Discover</th>
+                  <th class="p-3">Freedom</th>
+                  <th class="p-3">BoFA</th>
+                  
+
+                </tr>
+                <tr>
+                  <td>Purchase APR</td>
+                  <td>0% Intro APR on Purchases for 15 months, then 20.49% – 29.24% Variable</td>
+                  <td>0% Intro APR for 15 billing cycles for purchases, then 18.24% – 28.24% Variable APR</td>
+                  <td>0% intro APR for 21 months from account opening on purchases, then 18.24%, 24.74%, or 29.99% Variable APR</td>
+                </tr>
+                <tr>
+                    <td>Annual Fee</td>
+                    <td>$0</td>
+                    <td>$0</td>
+                    <td>$0</td>
+                </tr>
+                <tr>
+                    <td>Recommended Credit Score</td>
+                    <td>Excellent/Good
+                        670 - 850*</td>
+                    <td>Good/ Excellent
+                        670 - 850*</td>
+                    <td>Good – Excellent
+                        670 – 850*</td>
+                </tr>
+                <tr>
+                    <td>Cash rewards</td>
+                    <td>1% – 5%</td>
+                    <td>1.5% – 6.5%</td>
+                    <td>1.5x Points</td>
+                </tr>
+                <tr>
+                    <td>Welcome Bonus</td>
+                    <td>Earn an extra 1.5% on everything you buy (on up to $20,000 spent in the first year) </td>
+                    <td>25,000 online bonus points after you make at least $1,000 in purchases in the first 90 days of account opening</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <button  class="btn mb-3 button-format" (click)="OnCheck()" >Add to wallet</button></td>
+                    <td> <button  class="btn mb-3 button-format" (click)="OnCheck()" >Add to wallet</button></td>
+                    <td> <button  class="btn mb-3 button-format" (click)="OnCheck()" >Add to wallet</button></td>
+                </tr>
+               
+                </tbody>
+                </table>
+            </div>     
+          </div>
+        </div>
+        
+      </div>
+       
+      
+    </div>
+    </div>
+    
