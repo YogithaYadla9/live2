@@ -98,7 +98,8 @@
   }
 
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: none;
+   
     
   
     text-align: center;
@@ -160,10 +161,17 @@ margin-top: 5%;
   }
   .black-box {
     position: relative;
-   
+    
     height: 200px;
     margin: 30px;
     width: 30%;
+  }
+  .info-box {
+    
+    background-color:antiquewhite;
+    height: 500px;
+    
+    width: 50%;
   }
   
   .gray-box {

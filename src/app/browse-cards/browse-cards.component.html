@@ -4,14 +4,23 @@
         <div class="d-flex flex-row container-fluid">
         <div style="width: 1400px;">
        
-        <a class=" navbar-brand text-light mt-4" href="#">
-          WhichCard?
-          <!-- <img src="../../assets/images/logo1.jpeg" alt="" width="150px" height="100px" > -->
-        </a>
+
+          <a class=" navbar-brand text-light p-4 " style=" font-size: large;font-weight: 1000;" href="#">
+            <i> WhichCard?</i>
        
+           </a>
+       <p class=" navbar-brand text-light mt-4" >
+        Check cards
+       
+      </p>
         <p class=" navbar-brand text-light mt-4" (click)="wallet()">
           Wallet
          
+        </p>
+
+        <p class=" navbar-brand text-light mt-4" >
+          
+         Browse cards
         </p>
        </div>
       
@@ -27,14 +36,25 @@
         </div>
      </div>
     </nav>
-   
+    <div style="margin-top: 6%; width: 100%;background-color: rgb(206, 203, 203); ">
+    <p style=" margin-left: 44%; font-size: 30px; font-family: cursive;">Browse Cards</p>
+</div>
 <div  class="full-page">
+ 
     <div class="grid-container " >
+      
          
       <div class="grid-item ">
-        <div class="card margin-top">
-            <img src="https://cdn.cardcritics.com/uploads/2024/02/9099-566853.png">
-           
+        <div class="card margin-top ">
+        
+            <img  src="https://cdn.cardcritics.com/uploads/2024/02/9099-566853.png">
+            <div class="overlay">
+              <div class="text" style="color: black;">
+                Discover
+                <p><b>Discover is a credit card brand issued primarily in the United States. It was introduced by Sears in 1985. When launched, Discover did not charge an annual fee and offered a higher-than-normal credit limit.</b></p>
+                </div>
+              </div>
+         
             <p class="mt-3"><button>Add to wallet</button><button>Add to compare</button></p>
           </div>
           
@@ -42,7 +62,13 @@
       <div class="grid-item ">
         <div class="card margin-top">
             <img src="https://cdn.cardcritics.com/uploads/2024/01/40602_36.png">
-            
+            <div class="overlay">
+              <div class="text" style="color: black;">
+                Well Fargo
+
+                <p><b>Discover is a credit card brand issued primarily in the United States. It was introduced by Sears in 1985. When launched, Discover did not charge an annual fee and offered a higher-than-normal credit limit.</b></p>
+                </div>
+              </div>
             <p class="mt-3"><button>Add to wallet</button><button>Add to compare</button></p>
           </div>
           
@@ -50,6 +76,12 @@
       <div class="grid-item ">
         <div class="card margin-top">
             <img src="https://cdn.cardcritics.com/uploads/2024/02/image-100313861-15741744-1707148209000.png">
+            <div class="overlay">
+              <div class="text" style="color: black;">
+                Bank of America
+                <p><b>Discover is a credit card brand issued primarily in the United States. It was introduced by Sears in 1985. When launched, Discover did not charge an annual fee and offered a higher-than-normal credit limit.</b></p>
+                </div>
+              </div>
             <p class="mt-3"><button>Add to wallet</button><button>Add to compare</button></p>
           </div>
           
@@ -57,6 +89,12 @@
       <div class="grid-item ">
         <div class="card margin-top">
             <img src="https://cdn.cardcritics.com/uploads/2024/02/2291_10006359-4.png">
+            <div class="overlay">
+              <div class="text" style="color: black;">
+                Freedom
+                <p><b>Discover is a credit card brand issued primarily in the United States. It was introduced by Sears in 1985. When launched, Discover did not charge an annual fee and offered a higher-than-normal credit limit.</b></p>
+                </div>
+              </div>
             <p class="mt-3"><button>Add to wallet</button><button>Add to compare</button></p>
           </div>
           
@@ -64,7 +102,12 @@
       <div class="grid-item ">
         <div class="card margin-top">
             <img src="https://cdn.cardcritics.com/uploads/2024/02/609772.jpg">
-            
+            <div class="overlay">
+              <div class="text" style="color: black;">
+                American express
+                <p><b>Discover is a credit card brand issued primarily in the United States. It was introduced by Sears in 1985. When launched, Discover did not charge an annual fee and offered a higher-than-normal credit limit.</b></p>
+                </div>
+              </div>
             <p class="mt-3"><button>Add to wallet</button><button>Add to compare</button></p>
           </div>
           
@@ -72,7 +115,12 @@
       <div class="grid-item ">
         <div class="card margin-top">
             <img src="https://cdn.cardcritics.com/uploads/2022/03/citidoublecash.png">
-    
+            <div class="overlay">
+              <div class="text" style="color: black;">
+                Citi
+                <p><b>Discover is a credit card brand issued primarily in the United States. It was introduced by Sears in 1985. When launched, Discover did not charge an annual fee and offered a higher-than-normal credit limit.</b></p>
+                </div>
+              </div>
             <p class="mt-3"><button>Add to wallet</button><button>Add to compare</button></p>
           </div>
           
@@ -82,10 +130,10 @@
     </div>
 
     <div class="side-panel fixed-right" >
-        <h3 class="px-3 mt-3">In Comparision</h3>
+        <h3 class="px-3  ">In Comparision</h3>
         <ul >
-            <li><p> BoFA </p>  <i class="material-icons">cancel</i></li>
-            <li><p> Discover </p>  <i class="material-icons">cancel</i></li>
+            <li><p> BoFA </p>  <i class="material-icons " style="margin-left: 15%;" >cancel</i></li>
+            <li><p> Discover </p>  <i class="material-icons" style="margin-left: 1%;">cancel</i></li>
             <li><p> Freedom </p>  <i class="material-icons">cancel</i></li>
           </ul>
           <button class="btn-format " (click)="compare()">Compare</button>

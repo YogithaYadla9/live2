@@ -4,10 +4,10 @@
     <div class="d-flex flex-row container-fluid">
     <div style="width: 1400px;">
    
-    <a class=" navbar-brand text-light mt-4" href="#">
-      WhichCard?
-      <!-- <img src="../../assets/images/logo1.jpeg" alt="" width="150px" height="100px" > -->
-    </a>
+      <a class=" navbar-brand text-light p-4 " style="color:yellow;   font-size: large;font-weight: 1000;" href="#">
+        <i> WhichCard?</i>
+   
+       </a>
 
     <p class=" navbar-brand text-light mt-4" (click)="toBrowsCards()">
       Browse cards
@@ -17,6 +17,11 @@
       Wallet
      
     </p>
+    <p  style=" font-style: italic; font-size: larger;" (click)="wallet()">
+      Check card
+     
+    </p>
+   
    </div>
   
     <div>
@@ -33,15 +38,18 @@
 </nav>
 
 <div class="grid-container">
+  <div style="margin-top: 4%; width: 100%;background-color: rgb(206, 203, 203); ">
+  <p style=" margin-left: 44%; font-size: 30px; font-family: cursive;">Check Cards</p>
+  </div>
   <div class="grid-item ">
     <div class="{{uncheck}} p-4  form-size form-bg border ">
       <form class="d-flex flex-row">
         
-        <div class="mb-3 mt-3 form-group input-w">
+        <div class=" form-group input-w">
           <label for="card" class="form-label label-text">Card</label>
           <br>
-          <select class=" form-control input-format" #card (change)="selectedCard(card.value)"  id="card"  name="card">
-            <option value="Zolve aspire">Zolve aspire</option>
+          <select class="input-format" #card (change)="selectedCard(card.value)"  id="card"  name="card">
+            <option value="Zolve aspire"><b>Zolve aspire</b></option>
             <option value="Zolve classic">Zolve classic</option>
             <option value="Zolve signature">Zolve signature</option>
             <option value="Zolve black">Zolve black</option>
@@ -50,7 +58,7 @@
         <div class="mb-3  mt-3 input-w">
           <label for="purchase" class="form-label label-text">Expense</label>
           <br>
-          <select  class="form-control  input-format" id="purchase" #purchase (change)="Onpurchase(purchase.value)"  name="purchase">
+          <select  class=" input-format" id="purchase" #purchase (change)="Onpurchase(purchase.value)"  name="purchase">
           <option value="Airbnb">Airbnb</option>
           <option value="Lyft">Lyft</option>
           <option value="Uber">Uber</option>
@@ -65,7 +73,8 @@
         </div>
         
       </form>
-      <button  class="btn mb-3 button-format" (click)="OnCheck()" >Check</button>
+      <button  class="btn  button-format" (click)="OnCheck()" >Check</button>
+      <p style="color: blue; font-size: x-small;margin-left: 40%;" >  *(click to check how much you can save)</p>
     </div>
   </div>
   <div class="grid-item">

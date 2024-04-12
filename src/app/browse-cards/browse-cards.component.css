@@ -10,12 +10,31 @@
       grid-template-rows: auto auto auto ;
       grid-template-columns: auto auto auto ;
    
-      margin-top: 5%;
+      margin-top:-2%;
       margin-right: 3%;
       width: 100%;
       
    
      
+    }
+   
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 75%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgb(237, 139, 237)
+    }
+    .card:hover .overlay {
+      opacity: 1;
+    }
+  .no-underline{
+      text-decoration: none;
     }
     .full-page{
         display: flex;
@@ -31,7 +50,7 @@
         position: sticky;
         background-color: #eeeded;
         width: 25%;
-        margin-top: 5%;
+        
         height: 660px;
     }
     .form-size{
@@ -107,7 +126,7 @@
   
 
   .margin-top{
-margin-top: 5%;
+margin-top: 1%;
   }
   
   .price {
@@ -149,7 +168,7 @@ margin-top: 5%;
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: brown;
+    background-color: purple;
     text-align: center;
     cursor: pointer;
     width: 100%;

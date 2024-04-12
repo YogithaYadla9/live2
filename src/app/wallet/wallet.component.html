@@ -4,11 +4,14 @@
         <div class="d-flex flex-row container-fluid">
         <div style="width: 1400px;">
        
-        <a class=" navbar-brand text-light mt-4" href="#">
-          WhichCard?
-          <!-- <img src="../../assets/images/logo1.jpeg" alt="" width="150px" height="100px" > -->
-        </a>
+          <a class=" navbar-brand text-light p-4 " style=" font-size: large;font-weight: 1000;" href="#">
+            <i> WhichCard?</i>
        
+           </a>
+        <p class=" navbar-brand text-light mt-4" (click)="toBrowsCards()">
+          Check cards
+         
+        </p>  
     <p class=" navbar-brand text-light mt-4" (click)="toBrowsCards()">
       Browse cards
      
@@ -28,10 +31,14 @@
         </div>
      </div>
     </nav>
-    <div class="full-page"></div>
+    <div style="margin-top: 6%; width: 100%;background-color: rgb(206, 203, 203); ">
+      <p style=" margin-left: 44%; font-size: 30px; font-family: cursive;">Wallet</p>
+  </div>
+
     <div class="container">
         <div class="black-box">
             <div class="card  ">
+              
                 <img src="https://cdn.cardcritics.com/uploads/2024/02/9099-566853.png">
                 
                
@@ -39,7 +46,7 @@
         </div>
         <div class="gray-box">
             <div class="card  ">
-              <img src="https://cdn.cardcritics.com/uploads/2022/03/citidoublecash.png">
+              <img  src="https://cdn.cardcritics.com/uploads/2022/03/citidoublecash.png">
               
               </div>
             </div>
@@ -55,7 +62,21 @@
               <img src="https://cdn.cardcritics.com/uploads/2024/02/image-100313861-15741744-1707148209000.png">
               </div>
        </div>
-        </div>    
+        </div>   
+        
+    <div class="position-absolute top-0" style="margin-left: 65%; margin-top: 12%;" >
+      <div class="info-box">
+        <div class="card  ">
+            <img src="https://cdn.cardcritics.com/uploads/2024/02/9099-566853.png">
+            
+            <p style="font-size: large; font-style: italic ;">Discover</p>
+            <p>Added on : September 19 2023</p>
+            <p>Your notes:</p>
+            <p>Use it to pay for groceries</p>
+
+          </div>
+    </div>
+    </div>    
 
     </div>
 <!--    
